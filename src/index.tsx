@@ -5,21 +5,9 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { catReducer } from './reducers/catReducer';
 
-const INITIAL_STATE = { name: 'Andy' };
-
-const stateReducer = (state = INITIAL_STATE, action: any) => {
-  const { type, value } = action;
-
-  switch (type) {
-    case 'nameChange':
-      return { ...state, name: value };
-    default:
-      return state;
-  }
-};
-
-const store = createStore(stateReducer);
+const store = createStore(catReducer);
 
 store.subscribe(() => console.log(store.getState()));
 

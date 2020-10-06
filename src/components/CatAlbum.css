@@ -1,0 +1,27 @@
+.ui.card.cat-album {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  min-width: 500px;
+  min-height: 568px;
+}
+
+.cat-album > .cat-image {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.ui.card.cat-album > .content {
+  border-top: 0;
+}
+
+.cat-album > .content > .description {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cat-album > .content > button {
+  margin-bottom: 20px;
+}
